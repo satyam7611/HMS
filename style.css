@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif ;
+    
+}
+
+header{
+    display:flex;
+    height:80px;
+    background-color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    border-style:none;
+}
+.hospital_home {
+    height:65px;
+}
+.logo_container{
+    margin-left:2%;
+}
+.navbar{
+    /* display:flex;
+    min-width:800px;
+    justify-content: space-evenly;
+    margin-right:400px; */
+        display: flex;
+        min-width: 800px;
+        justify-content: space-evenly;
+    
+
+}
+.navbar a{
+    /* text-decoration: none; */
+    font-size: 14px;
+    letter-spacing: .3px;
+    color: #282c3f;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 28px 0;
+    border-bottom: 5px solid #ffffff;
+}
+.navbar a:hover{
+    color:orange;
+    border-bottom: 4px solid black;
+}
+.banner_container {
+background-image: url(images/d3.jpg);
+width:100%;
+height:100vh;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position:absolute;
+
+    
+}
+.banner{
+    width:100%;
+    margin-top:-41px;
+}
+
+.btn {
+    border-style: none;
+    border-radius:6px;
+    padding:5px;
+    background-color:#ffffff;
+    color:black;
+ 
+
+
+}
+.btn:hover{
+
+    border-bottom: 2px solid black;
+}
+.button_container {
+   border: none;
+    margin-top:5px;
+    margin-left:5px;
+}
+.a_btn {
+    text-decoration: none;
+    color: rgb(6, 96, 96);
+    font-size:17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.a_btn:hover{
+      color:orange;
+}
+#header{
+    background-image: url(images/banner.jpg);
+}
+.banner_text h1 {
+    color:white;
+    
+}
+
+.banner_text{
+    position:relative;
+    top: 286px;
+    left: 57px;
+    
+}
+.saty{
+font-size: 2rem;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.logo_container h4{
+    color:transparent;
+    -webkit-text-stroke: 3px darkmagenta;
+    position: relative;
+}
+.logo_container h4::before{
+    content:"HOSPITAL";
+    position:absolute;
+    width:0%;
+    height:100%;
+    overflow: hidden;
+    color:darkmagenta;
+    border-right: 8px solid darkmagenta;
+    transition: 1s ease-in-out;
+}
+.logo_container h4:hover::before{
+    width:100%;
+    filter:drop-shadow(0 0 25px darkmagenta);
+}
+
+.banner_text {
+    position: relative;
+    top: 286px;
+    left: 50%; /* Center the text */
+    transform: translateX(-50%); /* Adjust to center */
+    text-align: center; /* Center text */
+}
+
+.animated-text {
+    color: white;
+    opacity: 0; /* Start invisible */
+    transform: translateY(20px) scale(0.9); /* Start from below and smaller */
+    animation: slideIn 1s forwards; /* Slide in animation */
+    animation-delay: 0.5s; /* Delay for effect */
+    transition: color 0.5s ease; /* Color transition */
+}
+
+.animated-text:nth-of-type(2) {
+    animation-delay: 1s; /* Delay the second line */
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.9); /* Start position */
+    }
+    50% {
+        opacity: 0.5; /* Midway opacity */
+        transform: translateY(10px) scale(1.05); /* Slightly bigger */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0) scale(1); /* End position */
+    }
+}
+
+.animated-text:hover {
+    color: orange; /* Change text color on hover */
+    transform: scale(1.05); /* Slightly enlarge text */
+}

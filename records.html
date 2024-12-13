@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Health Records (EHR)</title>
+    <link rel="stylesheet" href="record.css">
+</head>
+<body>
+    <header>
+        <h1>Electronic Health Records</h1>
+    </header>
+
+    <section class="form-container">
+        <h2>Patient Information</h2>
+        <form id="ehr-form">
+            <input type="text" id="patientName" placeholder="Patient Name" required>
+            <input type="number" id="patientAge" placeholder="Age" required>
+            <textarea id="patientHistory" placeholder="Medical History" required></textarea>
+            <input type="text" id="patientContact" placeholder="Contact Number" required>
+            <button type="submit">Save Record</button>
+        </form>
+    </section>
+
+    <section class="records-section">
+        <h2>Patient Records</h2>
+        <table id="recordsTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Medical History</th>
+                    <th>Contact</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="recordsBody">
+                <!-- Records will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <script src="record.js"></script>
+</body>
+</html>
